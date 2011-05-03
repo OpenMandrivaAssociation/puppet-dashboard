@@ -1,14 +1,13 @@
-%define commit 071acf4
 %define _requires_exceptions make
 
 Name:		puppet-dashboard
-Version:	1.0.4
+Version:	1.1.0
 Release:	%mkrel 1
 Summary:	Puppet web interface 
 License:	GPL or Artistic
 Group:		Development/Perl
 Url:		http://www.puppetlabs.com/puppet/related-projects/dashboard/
-Source0:	http://puppetlabs.com/downloads/dashboard/puppet-dashboard-%{version}.tgz
+Source0:	http://puppetlabs.com/downloads/dashboard/puppet-dashboard-%{version}.tar.gz
 Source1:    %{name}.init
 Requires:   ruby-mysql
 Requires:   ruby-rake
@@ -24,7 +23,7 @@ valuable reports. In the future, it will also serve to integrate with other IT
 tools commonly used alongside Puppet.
 
 %prep
-%setup -q -n puppetlabs-puppet-dashboard-%{commit}
+%setup -q
 find . -name .gitignore | xargs rm -f
 
 %build
