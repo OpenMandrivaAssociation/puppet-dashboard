@@ -1,7 +1,7 @@
 %define _requires_exceptions make
 
 Name:		puppet-dashboard
-Version:	1.1.0
+Version:	1.1.1
 Release:	%mkrel 1
 Summary:	Puppet web interface 
 License:	GPL or Artistic
