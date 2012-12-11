@@ -9,11 +9,10 @@ Group:		Development/Perl
 Url:		http://www.puppetlabs.com/puppet/related-projects/dashboard/
 Source0:	http://puppetlabs.com/downloads/dashboard/puppet-dashboard-%{version}.tar.gz
 Source1:    %{name}.init
-Requires:   ruby-mysql
-Requires:   ruby-rake
-Requires:   ruby-RubyGems
+Requires:   rubygem-mysql
+Requires:   rubygem-rake
+Requires:   rubygem-RubyGems
 Buildarch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 The Puppet Dashboard is a web interface and reporting tool for your Puppet
@@ -95,4 +94,19 @@ rm -rf %{buildroot}
 %attr(-,dashboard,dashboard) %{_localstatedir}/lib/%{name}
 %attr(-,dashboard,dashboard) %{_localstatedir}/run/%{name}
 %attr(-,root,dashboard) %config(noreplace) %{_sysconfdir}/%{name}.conf
+
+
+
+%changelog
+* Fri May 27 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.1.1-1mdv2011.0
++ Revision: 680315
+- new  version
+
+* Tue May 03 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.1.0-1
++ Revision: 664984
+- new version
+
+* Thu Feb 24 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.0.4-1
++ Revision: 639604
+- import puppet-dashboard
 
