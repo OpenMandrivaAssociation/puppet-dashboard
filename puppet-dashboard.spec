@@ -2,7 +2,7 @@
 
 Name:		puppet-dashboard
 Version:	1.1.1
-Release:	%mkrel 1
+Release:	2
 Summary:	Puppet web interface 
 License:	GPL or Artistic
 Group:		Development/Perl
