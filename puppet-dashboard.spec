@@ -6,7 +6,7 @@ Release:	2
 Summary:	Puppet web interface 
 License:	GPL or Artistic
 Group:		Development/Perl
-Url:		http://www.puppetlabs.com/puppet/related-projects/dashboard/
+Url:		https://www.puppetlabs.com/puppet/related-projects/dashboard/
 Source0:	http://puppetlabs.com/downloads/dashboard/puppet-dashboard-%{version}.tar.gz
 Source1:    %{name}.init
 Requires:   rubygem-mysql
